@@ -8,16 +8,12 @@ This document provides guidance on how abbreviations and codes from the Traditio
 
 == All reports
 
----
-
 The attribute "reportStatus" of a report shall be set to either "NORMAL", "AMENDMENT" or "CORRECTION" to reflect its status.  Note that some of the statuses do not apply in certain reports.
 
 A Coordinate Reference System (CRS) shall be specified in geometries defined in all reports and is constrained to 2 dimensional horizontal CRS.  Attribute srsName shall be defined accordingly with srsDimension set to "2" and non-empty axisLabels set approprately with the CRS used.
 
 
 == METAR/SPECI
-
----
 
 NIL report
   A NIL report shall be represented by making iwxxm:observation empty with a nilReason of "http://codes.wmo.int/common/nil/missing" 
@@ -97,8 +93,6 @@ Missing Runway Visual Range
 
 == TAF
 
----
-
 NIL report
   A NIL report shall be represented by making iwxxm:baseForecast empty with a nilReason of "http://codes.wmo.int/common/nil/missing" 
 
@@ -123,8 +117,6 @@ Maximum and minimum temperature forecasts - TXnn/nnnnZ TNnn/nnnnZ
 
 == aixm:AirspaceVolume
 
----
-
 FLnnn, nnnnM, nnnnFT
   When a single altitude for a condition is specified, this shall be indicated with the same altitude value in both aixm:lowerLimit and aixm:upperLimit
 
@@ -136,8 +128,6 @@ TOP BLW FLnn
 
 
 == AIRMET and SIGMET
-
----
 
 CNL report
   A cancellation report shall be represented by setting attribute "isCancelReport" true, setting iwxxm:cancelledReportSequenceNumber, iwxxm:cancelledReportValidPeriod. Elements iwxxm:phenomenon and iwxxm:analysis shall be absent. 
@@ -153,8 +143,6 @@ Movement or expected movement - STNR
 
 
 == Volcanic Ash Advisory
-
----
 
 'UNKNOWN' volcano name
   An unknown volcano name shall be indicated with an "EruptingVolcano/name" of "UNKNOWN"
@@ -195,8 +183,6 @@ Eruption details
 
 == Tropical Cyclone Advisory
 
----
-
 'UNNAMED' tropical cyclone name
   An unnamed tropical cyclone shall be indicated with a "tropicalCycloneName" of "UNNAMED"
 
@@ -217,8 +203,6 @@ Target is forecast to no longer categorize as a tropical cyclone
 
 
 == Space Weather Advisory
-
----
 
 'DAYSIDE'
   DAYSIDE shall be indicated with "gml:CircleByCenterPoint" with "gml:pos" set to the latitude and longitude of the sub-solar point at the observed or forecast time, "gml:radius" shall be of sufficient length to circumscribe the sun-lit portion of the Earth, approximately 10100 km.
