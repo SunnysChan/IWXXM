@@ -8,14 +8,14 @@ This document provides guidance on how abbreviations and codes from the _Traditi
 
 == All reports
 
-The attribute "reportStatus" of a report shall be set to either "NORMAL", "AMENDMENT" or "CORRECTION" to reflect its status.  Note that some of the statuses do not apply in certain reports.
+The attribute _"reportStatus"_ of a report shall be set to either _"NORMAL", "AMENDMENT" or "CORRECTION"_ to reflect its status.  Note that some of the statuses do not apply in certain reports.
 
 A Coordinate Reference System (CRS) shall be specified in geometries defined in all reports and is constrained to 2 dimensional horizontal CRS.  Attribute srsName shall be defined accordingly with srsDimension set to "2" and non-empty axisLabels set approprately with the CRS used.
 
 
 == METAR/SPECI
 
-NIL report
+NIL report::
   A NIL report shall be represented by making iwxxm:observation empty with a nilReason of "http://codes.wmo.int/common/nil/missing" 
 
 CAVOK - Cloud and visibility OK
