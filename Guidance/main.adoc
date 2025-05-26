@@ -1,6 +1,6 @@
 :imagesdir: ./media/
 
-= TAC-to-XML-GUidance
+= TAC-to-XML-Guidance
 
 == Introduction
 
