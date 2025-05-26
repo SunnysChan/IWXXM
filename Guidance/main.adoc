@@ -16,7 +16,7 @@ A Coordinate Reference System (CRS) shall be specified in geometries defined in 
 == METAR/SPECI
 
 NIL report::
-  A NIL report shall be represented by making iwxxm:observation empty with a nilReason of "http://codes.wmo.int/common/nil/missing" 
+A NIL report shall be represented by making iwxxm:observation empty with a nilReason of "http://codes.wmo.int/common/nil/missing" 
 
 CAVOK - Cloud and visibility OK
   When CAVOK conditions apply, the appropriate Record type shall have "cloudAndVisibilityOK" set to true and visibility, runway visual range, weather, and cloud information shall be absent
