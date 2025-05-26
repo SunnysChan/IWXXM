@@ -1,0 +1,3 @@
+:toc: auto
+:toclevels: 1
+:organization: WMO
