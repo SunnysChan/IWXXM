@@ -1,17 +1,25 @@
-= Introduction
+= TAC-to-XML-GUidance
+
+== Introduction
+
 ---
+
 This document provides guidance on how abbreviations and codes from the Traditional Alphanumeric Codes (TAC) are represented in XML (IWXXM).
 
-==========================
-All reports
-==========================
+
+== All reports
+
+---
+
 The attribute "reportStatus" of a report shall be set to either "NORMAL", "AMENDMENT" or "CORRECTION" to reflect its status.  Note that some of the statuses do not apply in certain reports.
 
 A Coordinate Reference System (CRS) shall be specified in geometries defined in all reports and is constrained to 2 dimensional horizontal CRS.  Attribute srsName shall be defined accordingly with srsDimension set to "2" and non-empty axisLabels set approprately with the CRS used.
 
-==========================
-METAR/SPECI
-==========================
+
+== METAR/SPECI
+
+---
+
 NIL report
   A NIL report shall be represented by making iwxxm:observation empty with a nilReason of "http://codes.wmo.int/common/nil/missing" 
 
@@ -87,9 +95,11 @@ Variations from mean wind direction
 Missing Runway Visual Range
   If the aerodrome is not equipped with RVR sensors and prevailing horizontal visibility is below 1500 metres, iwxxm:rvr shall be empty with nilReason of "http://codes.wmo.int/common/nil/missing" and xsi:nil attribute set to "true". If the aerodrome is equipped with RVR sensors but are inoperative and prevailing horizontal visibility is below 1500 metres, iwxxm:rvr shall be empty with nilReason of "http://codes.wmo.int/common/nil/notObservable" and xsi:nil attribute set to "true".
 
-==========================
-TAF
-==========================
+
+== TAF
+
+---
+
 NIL report
   A NIL report shall be represented by making iwxxm:baseForecast empty with a nilReason of "http://codes.wmo.int/common/nil/missing" 
 
@@ -111,9 +121,11 @@ Vertical visibility "VV///"
 Maximum and minimum temperature forecasts - TXnn/nnnnZ TNnn/nnnnZ
   As indicated in Annex 3 these shall be given in pairs.  If more than one pair of temperatures are provided and only one maximum or minimum is anticipated one may consider repeating this in both groups.
   
-==========================
-aixm:AirspaceVolume
-==========================
+
+== aixm:AirspaceVolume
+
+---
+
 FLnnn, nnnnM, nnnnFT
   When a single altitude for a condition is specified, this shall be indicated with the same altitude value in both aixm:lowerLimit and aixm:upperLimit
 
@@ -123,9 +135,11 @@ TOP ABV FLnnn
 TOP BLW FLnn
   When a condition top is specified with upper limit, but actual top height is unknown, this shall be indicated with aixm:upperLimit nilReason set to "unknown" and and xsi:nil set to true. aixm:maximumLimit shall be set with value of "nnn"
 
-==========================
-AIRMET and SIGMET
-==========================
+
+== AIRMET and SIGMET
+
+---
+
 CNL report
   A cancellation report shall be represented by setting attribute "isCancelReport" true, setting iwxxm:cancelledReportSequenceNumber, iwxxm:cancelledReportValidPeriod. Elements iwxxm:phenomenon and iwxxm:analysis shall be absent. 
 
@@ -138,9 +152,11 @@ NO VA EXP - No volcanic ash expected
 Movement or expected movement - STNR
   Stationary phenomenon shall be denoted with an empty iwxxm:directionOfMotion with nilReason "http://codes.wmo.int/common/nil/inapplicable" and iwxxm:speedOfMotion of 0.
 
-==========================
-Volcanic Ash Advisory
-==========================
+
+== Volcanic Ash Advisory
+
+---
+
 'UNKNOWN' volcano name
   An unknown volcano name shall be indicated with an "EruptingVolcano/name" of "UNKNOWN"
   
@@ -177,9 +193,11 @@ Eruption details
 'NO FURTHER ADVISORIES'
   Element "nextAdvisoryTime" shall be nil with nilReason "http://codes.wmo.int/common/nil/inapplicable"
 
-==========================
-Tropical Cyclone Advisory
-==========================
+
+== Tropical Cyclone Advisory
+
+---
+
 'UNNAMED' tropical cyclone name
   An unnamed tropical cyclone shall be indicated with a "tropicalCycloneName" of "UNNAMED"
 
@@ -198,9 +216,11 @@ Forecast "maximumSurfaceWindSpeed" is less than 34 knots
 Target is forecast to no longer categorize as a tropical cyclone
   A NIL shall be indicated in "tropicalCyclonePosition" with nilReason set to 'http://codes.wmo.int/common/nil/inapplicable'
 
-==========================
-Space Weather Advisory
-==========================
+
+== Space Weather Advisory
+
+---
+
 'DAYSIDE'
   DAYSIDE shall be indicated with "gml:CircleByCenterPoint" with "gml:pos" set to the latitude and longitude of the sub-solar point at the observed or forecast time, "gml:radius" shall be of sufficient length to circumscribe the sun-lit portion of the Earth, approximately 10100 km.
 
