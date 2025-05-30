@@ -1,0 +1,7 @@
+:imagesdir: ./media/
+
+:title-logo-image: image:image1.png["app logo",243]
+
+= TAC-to-XML-Guidance
+Version 0.0
+Revision 1
