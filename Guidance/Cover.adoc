@@ -1,6 +1,6 @@
 :imagesdir: ./media/
 
-image::wmologo.jpeg["WMO logo",250]
+image::wmologo.jpeg["WMO logo",200]
 
 = TAC-to-XML-Guidance
 Version 0.0
