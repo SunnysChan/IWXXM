@@ -1,6 +1,6 @@
 :imagesdir: ./media/
 
-:title-logo-image: image:image1.png["app logo",243]
+:title-logo-image: image:wmo.jpeg["WMO logo",500]
 
 = TAC-to-XML-Guidance
 Version 0.0
