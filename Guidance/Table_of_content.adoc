@@ -1,7 +1,8 @@
-= Table of Content
-
 :toc: auto
 :toclevels: 1
 :organization: WMO
 
+= Table of Content
+
+include::Cover.adoc[]
 include::main.adoc[]
