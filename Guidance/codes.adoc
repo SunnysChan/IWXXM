@@ -223,3 +223,6 @@ NIL remarks shall be indicated with "remarks" nilReason set to "http://codes.wmo
   
 'NO FURTHER ADVISORIES'::
 A NIL shall be indicated with "nextAdvisoryTime" with a nilReason of "http://codes.wmo.int/common/nil/inapplicable"
+
+
+== GML identifier
