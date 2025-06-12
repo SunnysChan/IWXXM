@@ -2,6 +2,6 @@
 
 image::wmologo.jpeg["WMO logo",200]
 
-= TAC-to-XML-Guidance
+= Guidance on IWXXM Encoding 
 Version 0.0
 Revision 1
