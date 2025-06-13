@@ -9,3 +9,5 @@ include::Cover.adoc[]
 include::codes.adoc[]
 
 include::CRS_ref.adoc[]
+
+include::GML_identifiers[]
